@@ -77,7 +77,3 @@ has_potential_infection(Patient) :-
     intersection(PatientSymptoms, PotentialSymptoms, ActualSymptoms),
     length(ActualSymptoms, NumSymptoms),
     (is_high_risk(Patient) ; takes_immunosuppressant(Patient) ; has_risky_history(Patient) ; NumSymptoms >= 4).
-
-
-
-
